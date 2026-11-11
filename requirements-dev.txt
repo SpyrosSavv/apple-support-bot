@@ -1,0 +1,6 @@
+# Dev / CI dependencies
+ruff==0.17.4
+mypy==2.4.1
+pytest==9.2.0
+pytest-asyncio==1.4.1.post1
+pageindex==0.5.3
