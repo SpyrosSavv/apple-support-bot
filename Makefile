@@ -11,6 +11,9 @@ install:  ## Create .venv and install app + dev dependencies
 	uv pip install --python $(PY) -r requirements.txt -r requirements-dev.txt
 
 # Quality
+test:  ## Run the unit/integration tests (no keys or services needed)
+	$(PY) -m pytest -v
+
 lint:  ## Lint and check formatting
 	$(PY) -m ruff check .
 	$(PY) -m ruff format --check .
